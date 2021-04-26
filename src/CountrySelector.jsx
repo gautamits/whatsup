@@ -31,7 +31,7 @@ export default function () {
       <input type="hidden" name={'phone'} value={phoneWithCountryCode} /> 
      <input placeholder='phone number' required className="phone-number" type="tel" value={phone} onChange={e=>setPhone(e.target.value)}/>
     </fieldset>
-     <input type="submit"/>
+     <input type="submit" value="start chat"/>
      </form>
   )
 }
