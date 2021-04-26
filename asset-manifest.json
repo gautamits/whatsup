@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/whatsup/static/css/main.893def35.chunk.css",
-    "main.js": "/whatsup/static/js/main.fbb76a68.chunk.js",
-    "main.js.map": "/whatsup/static/js/main.fbb76a68.chunk.js.map",
+    "main.js": "/whatsup/static/js/main.888fef88.chunk.js",
+    "main.js.map": "/whatsup/static/js/main.888fef88.chunk.js.map",
     "runtime-main.js": "/whatsup/static/js/runtime-main.878843e3.js",
     "runtime-main.js.map": "/whatsup/static/js/runtime-main.878843e3.js.map",
     "static/js/2.44113904.chunk.js": "/whatsup/static/js/2.44113904.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.878843e3.js",
     "static/js/2.44113904.chunk.js",
     "static/css/main.893def35.chunk.css",
-    "static/js/main.fbb76a68.chunk.js"
+    "static/js/main.888fef88.chunk.js"
   ]
 }
