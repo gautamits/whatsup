@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/whatsup/static/css/main.3fe075fe.chunk.css",
-    "main.js": "/whatsup/static/js/main.d22a9fe5.chunk.js",
-    "main.js.map": "/whatsup/static/js/main.d22a9fe5.chunk.js.map",
+    "main.css": "/whatsup/static/css/main.893def35.chunk.css",
+    "main.js": "/whatsup/static/js/main.fbb76a68.chunk.js",
+    "main.js.map": "/whatsup/static/js/main.fbb76a68.chunk.js.map",
     "runtime-main.js": "/whatsup/static/js/runtime-main.878843e3.js",
     "runtime-main.js.map": "/whatsup/static/js/runtime-main.878843e3.js.map",
     "static/js/2.44113904.chunk.js": "/whatsup/static/js/2.44113904.chunk.js",
@@ -12,13 +12,13 @@
     "index.html": "/whatsup/index.html",
     "service-worker.js": "/whatsup/service-worker.js",
     "service-worker.js.map": "/whatsup/service-worker.js.map",
-    "static/css/main.3fe075fe.chunk.css.map": "/whatsup/static/css/main.3fe075fe.chunk.css.map",
+    "static/css/main.893def35.chunk.css.map": "/whatsup/static/css/main.893def35.chunk.css.map",
     "static/js/2.44113904.chunk.js.LICENSE.txt": "/whatsup/static/js/2.44113904.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.878843e3.js",
     "static/js/2.44113904.chunk.js",
-    "static/css/main.3fe075fe.chunk.css",
-    "static/js/main.d22a9fe5.chunk.js"
+    "static/css/main.893def35.chunk.css",
+    "static/js/main.fbb76a68.chunk.js"
   ]
 }
