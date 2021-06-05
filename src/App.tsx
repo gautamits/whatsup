@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CountrySelector from './CountrySelector'
+import CountrySelector from './components/CountrySelector'
 
 function App() {
   return (

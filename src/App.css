@@ -4,54 +4,24 @@
 }
 
 body {
-  width: calc(100vw - 32px);
-  padding: 16px;
+  /* width: calc(100vw - 32px); */
 }
 
 .App {
-  text-align: center;
   width: 100%;
   height: calc(100vh - 32px);
 }
 
 form {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  padding: 16px;
+  grid-row-gap: 20px;
+}
+.MuiList-root{
+  overflow: autp;
 }
 
-fieldset {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  border-width: 0px;
-}
-
-
-.phone-number {
-  align-items: center;
-  background-color: hsl(0, 0%, 100%);
-  border-color: hsl(0, 0%, 80%);
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  margin-left: 4px;
-  padding: 0 4px;
-  flex: 1 0 auto;
-}
-
-input[type="submit"] {
-  height: 40px;
-  margin-top: auto;
-  background-color: #01e675;
-  border-radius: 4px;
-  border-style: hidden;
-  border-color: #01e675;
-  border-width: 1px;
-  width: 100%;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
+.history-card {
+  margin-bottom: 5px;
 }
