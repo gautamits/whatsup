@@ -4,9 +4,15 @@
   "theme_color": "#fff",
   "background_color": "#fff",
   "display": "standalone",
-  "scope": "/whatsup",
+  "scope": "/whatsup/",
   "start_url": "https://gautamits.github.io/whatsup/",
   "icons": [
+    {
+      "src": "icons/maskable-icon-192x192.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
         "src": "icons/android-chrome-192x192.png",
         "sizes": "192x192",
