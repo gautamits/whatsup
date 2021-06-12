@@ -5,7 +5,7 @@
   "background_color": "#fff",
   "display": "standalone",
   "scope": "/whatsup",
-  "start_url": "https://gautamits.github.io/whatsup",
+  "start_url": "https://gautamits.github.io/whatsup/",
   "icons": [
     {
         "src": "icons/android-chrome-192x192.png",
