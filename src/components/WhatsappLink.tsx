@@ -1,12 +1,19 @@
 import React from 'react'
-import {ListItem, ListItemText, Divider, ListItemSecondaryAction, IconButton, Dialog, DialogTitle, DialogContent,DialogContentText,
+import {ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+  IconButton,
+  Dialog,
+  DialogTitle,
+  DialogContent,DialogContentText,
   TextField,
   DialogActions,
   Button,
-  Card
+  Card,
+  Link
 } from '@material-ui/core'
 import useWhatsappLink from '../helpers/useWhatsappLink'
-import {Edit, Delete} from '@material-ui/icons';
+import {Edit, Delete, Call} from '@material-ui/icons';
 import {CountContext} from './CountrySelector'
 
 
@@ -40,6 +47,11 @@ export default function WhatsappLink({number, name, index}: {number: string, nam
           <IconButton edge="end" aria-label="delete" onClick={e=>setDialog('delete')}>
             <Delete />
           </IconButton>
+          <Link href={`tel:${number}`}>
+            <IconButton edge="end" aria-label="call">
+              <Call/>
+            </IconButton>
+          </Link>
         </ListItemSecondaryAction>
       </ListItemLink>
       </Card>
