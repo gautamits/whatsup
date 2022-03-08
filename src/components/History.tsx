@@ -7,7 +7,7 @@ import {
   // ListItem, ListItemText, ListItemIcon
 } from '@material-ui/core'
 
-export default function History({}) {
+export default function History() {
   const {history} = React.useContext(CountContext)
   return (
     <List style={{overflow:'auto'}}>
