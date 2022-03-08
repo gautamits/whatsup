@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import countryDialInfo from '../helpers/country-dial-info.json'
 import HistoryComponent from './History'
-import {Input, FormControl, InputLabel, Select, makeStyles, Button, Paper} from '@material-ui/core'
+import {Input, FormControl, InputLabel, Select, Button, Paper} from '@material-ui/core'
 import useWhatsappLink from '../helpers/useWhatsappLink'
 
 import createPersistedState from 'use-persisted-state';
@@ -39,19 +39,11 @@ export default function CountrySelector() {
 
   const {href, phoneWithCountryCode} = useWhatsappLink({phone: `${selectedCountry}${phone}`})
 
-  const useStyles = makeStyles((theme) => ({
-    formControl: {
-      margin: theme.spacing(1),
-      minWidth: 120,
-    },
-  }));
-
   function handleSubmit(e:any){
     e.preventDefault();
     setHistory([...history, {number: phoneWithCountryCode, name: phoneWithCountryCode}])
     window.location.href = href
   }
-  const classes = useStyles();
   return (
     <CountContext.Provider
       value={{history, setHistory, selectedCountry}}
@@ -71,7 +63,7 @@ export default function CountrySelector() {
                 id: 'country',
               }}
             >
-              {countryDialInfo.map(({name, flag, code, dial_code}) => <option value={dial_code}>{flag} {dial_code} {name}</option>)}
+              {countryDialInfo.map(({name, flag, dial_code}) => <option value={dial_code}>{flag} {dial_code} {name}</option>)}
             </Select>
           </FormControl>
           <FormControl>
