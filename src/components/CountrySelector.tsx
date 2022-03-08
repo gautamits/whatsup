@@ -1,13 +1,13 @@
-import React, {useEffect, useMemo} from 'react'
+import React, {useEffect} from 'react'
 import countryDialInfo from '../helpers/country-dial-info.json'
-import History from './History'
-import {Input, TextField, FormControl, InputLabel, Select, makeStyles, Button, Paper} from '@material-ui/core'
+import HistoryComponent from './History'
+import {Input, FormControl, InputLabel, Select, makeStyles, Button, Paper} from '@material-ui/core'
 import useWhatsappLink from '../helpers/useWhatsappLink'
 
 import createPersistedState from 'use-persisted-state';
-const usePhoneState = createPersistedState('phone');
-const useCountryState = createPersistedState('country');
-const useHistory = createPersistedState('history');
+const usePhoneState = createPersistedState<string>('phone');
+const useCountryState = createPersistedState<string>('country');
+const useHistory = createPersistedState<History[]>('history');
 
 interface History {
   number: string;
@@ -25,7 +25,7 @@ export const CountContext = React.createContext<GlobalContext>({history: [], set
 export default function CountrySelector() {
   const [selectedCountry, setSelectedCountry] = useCountryState('')
   const [phone, setPhone] = usePhoneState('')
-  const [history, setHistory] = useHistory<History[]>([])
+  const [history, setHistory] = useHistory([])
   const [windowHeight, setWindowHeight] = React.useState(window.innerHeight - 32)
 
   function handleResize(e:UIEvent) {
@@ -79,7 +79,7 @@ export default function CountrySelector() {
             <Input required id="phone" type="tel" value={phone} onChange={e=>setPhone(e.target.value)} />
           </FormControl> 
         </div>
-        <History />
+        <HistoryComponent />
         <Button
           variant='contained'
           color='primary'
